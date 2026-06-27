@@ -50,6 +50,10 @@ jobs:
             4. Publica UN ÚNICO comentario de diagnóstico estructurado en español:
                gh issue comment ${{ github.event.issue.number }} --repo ${{ github.repository }} --body "<diagnóstico>"
 
+               El comentario debe estar escrito en Markdown compatible con GitHub (GFM — GitHub Flavored Markdown):
+               usa encabezados con `##`, negritas con `**texto**`, listas con `-`, y código inline con backticks.
+               No uses HTML ni extensiones de Markdown que GitHub no soporte.
+
                El comentario debe incluir exactamente estas secciones en markdown:
 
                ## 🔍 Diagnóstico del Issue
